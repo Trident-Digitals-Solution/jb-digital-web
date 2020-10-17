@@ -61,6 +61,7 @@ ul.nav-links li:hover {
 	color: rgb(10, 10, 10);
 	box-shadow: rgb(20, 20, 20) 0.5vh 0.5vh 1vh;
 	padding: 1.4vh;
+	cursor: pointer;
 }
 
 .cover {
@@ -85,6 +86,6 @@ ul.nav-links li:hover {
 	font-weight: bold;
 }
 
-.wrap-border {
+/* .wrap-border {
 	
-}
+} */
