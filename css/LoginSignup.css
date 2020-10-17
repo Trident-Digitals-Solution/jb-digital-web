@@ -22,8 +22,10 @@ Variable Declearation Part  */
 
 body {
 	align-items: center;
-	background-color: var(--white);
-  background: url("https://cdn.pixabay.com/photo/2018/07/29/09/30/network-3569734_960_720.jpg");
+  background-color: var(--white);
+  background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg');
+	z-index: -1;
+  /* background: url("https://cdn.pixabay.com/photo/2018/07/29/09/30/network-3569734_960_720.jpg"); */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -32,6 +34,16 @@ body {
 	height: 100vh;
 	place-items: center;
 }
+.cover-image {
+	width: 100%;
+	background-image: url("https://cdn.pixabay.com/photo/2018/07/29/09/30/network-3569734_960_720.jpg");
+	background-size: cover;
+	margin: auto;
+	z-index: -1;
+	margin: 15vh 0 0 0;
+}
+
+
 
 .form__title {
 	font-weight: 300;
