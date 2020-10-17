@@ -12,6 +12,11 @@ body {
 	background-color: rgba(240, 240, 240);
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 .navbar {
 	padding: 5vh 5vh 5vh 1vh;
 	width: 100%;
