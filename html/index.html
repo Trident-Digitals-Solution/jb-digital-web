@@ -1,95 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<!--All content values are placeholders and will be replaced shortly-->
-		<meta name="description" content="site-description-to-be-added">
-		<meta property="og:image" content="site-image-to-be-added">
-		<meta property="og:title" content="site-title-to-be-added">
-		<meta property="og:description" content="site-description-to-be-added">
-		<meta property="og:url" content="page-address-to-be-added">
 
-		<link rel="icon" href="../img/favicon.ico">
-		<link href="../css/main1.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Raleway&display=swap" rel="stylesheet">
-		
-		<title>Trident Digitals</title>
-	</head>
-	<body>
-		<div class="navbar">
-			<p class="big-text inlined">Trident Digitals</p>
-			<ul class="nav-links inlined">
-				<a href="#"><li class="selected">Home</li></a>
-				<a href="#div2"><li>About us</li></a>
-				<a href="#div3"><li>Technology</li></a>
-				<a href="#div4"><li>Creativity</li></a>
-				<a href="#div5"><li>Strategy</li></a>
-				<a href="Contact.html"><li>Contact Us</li></a>
-			</ul>
-		</div>
-	
-		<div class="cover" id="div1">
-			<div class="transparent-cover">
-				<div class="intro-content">
-					<img src="../img/logo.png" class="logo"/>
-					<h1>Trident Digitals</h1>
-					<br>
-					<p>Welcome to Trident Digital, All in one digital marketing solution</p>
-					<button class="round-button">Explore Our Plans</button>
-				</div>
-			</div>
-		</div>
-		
-		<div class="cover" id=div2>
-			<div class="main-container right">
-				<div class="dropped-card abs">
-					<p class="title">ABOUT US</p>
-					<p class="text">Trident Digitals was founded with the idea to provide best in class service to our
-						customers. Our passion is to provide innovative, highly functional, visually appealing,
-						and feature-rich websites and mobile applications as well as the marketing programs that
-						drive business growth. We hold ourselves to the highest standards of creative and
-						technical excellence. Every client, regardless of the size or scope of the project, can
-						expect nothing but the best customer service and professionalism from the experienced
-						and dedicated staff of Trident Digitals.</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="cover" id=div3>
-			<div class="main-container left">
-				<div class="dropped-card abs">
-					<p class="title">TECHNOLOGY</p>
-					<p class="text">Web and mobile technologies are continuously evolving. We are always researching and
-						exploring new and innovative ways to develop websites and mobile applications to
-						provide them to our customers.</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="cover" id=div4>
-			<div class="main-container right">
-				<div class="dropped-card abs">
-					<p class="title">CREATIVITY</p>
-					<p class="text">Our creative team is dynamic and always on the peak of imagination to come up with
-						out-of-the-box ideas to provide out of the box solutions.</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="cover" id=div5>
-			<div class="main-container left">
-				<div class="dropped-card abs">
-					<p class="title">STRATEGY</p>
-					<p class="text">At Trident Digitals, we always serve up something unique in every website and
-						promotional campaign. We do market research and come up with the best possible tactic
-						and ideas to place our customer’s products and services.</p>
-				</div>
-			</div>
-		</div>
-		
-	</body>
+    <!--All content values are placeholders and will be replaced shortly-->
+    <meta name="description" content="site-description-to-be-added">
+    <meta property="og:image" content="site-image-to-be-added">
+    <meta property="og:title" content="site-title-to-be-added">
+    <meta property="og:description" content="site-description-to-be-added">
+    <meta property="og:url" content="page-address-to-be-added">
+
+    <link rel="icon" href="../img/favicon.ico">
+    <link href="../css/main1.css" rel="stylesheet">
+
+    <link href="../css/card.css" rel="stylesheet">
+
+    <!--Sonu frameworks-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Trident Digitals</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p class="big-text inlined">Trident Digitals</p>
+        <ul class="nav-links inlined">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#div2">
+                <li>About us</li>
+            </a>
+            <a href="#div3">
+                <li>Technology</li>
+            </a>
+            <a href="#div4">
+                <li>Creativity</li>
+            </a>
+            <a href="#div5">
+                <li>Strategy</li>
+            </a>
+            <a href="#teams">
+                <li>Team</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="cover" id="div1">
+        <div class="transparent-cover">
+            <div class="intro-content">
+                <img src="../img/logo.png" class="logo" />
+                <h1>Trident Digitals</h1>
+                <br>
+                <p>Welcome to Trident Digital, All in one digital marketing solution</p>
+                <button class="round-button">Explore Our Plans</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover" id=div2>
+        <div class="main-container right">
+            <div class="dropped-card abs">
+                <p class="title">ABOUT US</p>
+                <p class="text">Trident Digitals was founded with the idea to provide best in class service to our customers. Our passion is to provide innovative, highly functional, visually appealing, and feature-rich websites and mobile applications as well as the marketing programs that drive business growth. We hold ourselves to the highest standards of creative and technical excellence. Every client, regardless of the size or scope of the project, can expect nothing but the best customer service and professionalism from the experienced and dedicated staff of Trident Digitals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover" id=div3>
+        <div class="main-container left">
+            <div class="dropped-card abs">
+                <p class="title">TECHNOLOGY</p>
+                <p class="text">Web and mobile technologies are continuously evolving. We are always researching and exploring new and innovative ways to develop websites and mobile applications to provide them to our customers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover" id=div4>
+        <div class="main-container right">
+            <div class="dropped-card abs">
+                <p class="title">CREATIVITY</p>
+                <p class="text">Our creative team is dynamic and always on the peak of imagination to come up with out-of-the-box ideas to provide out of the box solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover" id=div5>
+        <div class="main-container left">
+            <div class="dropped-card abs">
+                <p class="title">STRATEGY</p>
+                <p class="text">At Trident Digitals, we always serve up something unique in every website and promotional campaign. We do market research and come up with the best possible tactic and ideas to place our customer’s products and services.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Our Team</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="../img/Benison.jpeg" alt="">
+                        <div class="text">Benison Dhanji</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="../img/swajeet.jpeg" alt="">
+                        <div class="text">Swajeet Swrankar</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="../img/Sonu.png" alt="">
+                        <div class="text">Sonu Kumar</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="../img/jaspreet.jpeg" alt="">
+                        <div class="text">Jaspreet</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="../img/Sonu.png" alt="">
+                        <div class="text">Sonu Kumar </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/sonukumar81800">Sonu</a> | <a href="https://www.linkedin.com/in/swajeet-swarnkar">Swajeet </a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
 </html>
