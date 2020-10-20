@@ -1,5 +1,10 @@
 $(document).ready(function () {
   $(window).scroll(function () {
+    $('.scroll-up-btn').click(function () {
+      $('html').animate({ scrollTop: 0 });
+      // removing smooth scroll on slide-up button click
+      $('html').css("scrollBehavior", "auto");
+    });
 
 
     // scroll-up button show/hide script
