@@ -72,8 +72,7 @@ ul.nav-links li.selected {
 
 ul.nav-links li:hover {
 	transform: translateY(1vh);
-	background-color: white;
-	color: rgb(10, 10, 10);
+	background-color: crimson;
 	box-shadow: rgb(20, 20, 20) 0.5vh 0.5vh 1vh;
 	padding: 2vh;
 	cursor: pointer;
