@@ -2,14 +2,15 @@
 
 var maxVisibleOffset = 105;
 var logo = document.getElementById("smalogo");
-logo.style.height = "4.5vh";
 window.onscroll = function() {
 	var currOffset = window.pageYOffset;
-	if(currOffset > maxVisibleOffset)
-		logo.style.height = "0";
-	else if(currOffset < maxVisibleOffset) {
+	if(currOffset > maxVisibleOffset) {
 		if(logo.style.height !== "4.5vh")
 			logo.style.height = "4.5vh"
+	}
+	else if(currOffset < maxVisibleOffset) {
+		if(logo.style.height !== "0")
+			logo.style.height = "0";
 	}
 	//  && logo.style.height === "0"
 }
