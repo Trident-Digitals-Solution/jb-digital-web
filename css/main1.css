@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	background-color: rgba(240, 240, 240);
+	background-color: white;
 	text-shadow: 1px 1px 5vh rgba(240, 240, 240, 0.8);
 	width: 100%;
 }
@@ -25,7 +25,7 @@ a {
 }
 
 .navbar {
-	padding: 1vh 5vh;
+	padding: 2vh 5vh;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -38,6 +38,11 @@ a {
 
 .big-text {
 	font-size: 4.5vh;
+}
+
+.logo-small {
+	height: 4.5vh;
+	vertical-align: middle;
 }
 
 .logo {
@@ -89,6 +94,8 @@ ul.nav-links li:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	margin: 12vh 0;
+	overflow-y: hidden;
 }
 
 #div1 {
@@ -104,25 +111,34 @@ ul.nav-links li:hover {
 }
 
 #div2 {
-	background-image: url('../img/aboutus.jpg');
+	/* background-image: url('../img/aboutus.jpg'); */
 }
 
 #div3 {
-	background-image: url('../img/market.jpg');
+	/* background-image: url('../img/market.jpg'); */
 }
 
 #div4 {
-	background-image: url('../img/office.jpg');
+	/* background-image: url('../img/office.jpg'); */
 }
 
 #div5 {
-	background-image: url('../img/analysis.jpg');
+	/* background-image: url('../img/analysis.jpg'); */
 }
 
 .main-container {
 	text-align: center;
-	width: 40%;
-	height: 100%;
+	width: 45%;
+	height: 95%;
+	overflow-y: scroll;
+	/* hide card scroll bar IE, Edge, Firefox*/
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+/* hide card scroll bar Webkit*/
+.main-container::-webkit-scrollbar {
+	display: none;
 }
 
 .dropped-card {
@@ -139,7 +155,7 @@ ul.nav-links li:hover {
 
 .abs {
 	position: relative;
-	top: 40%;
+	top: 10%;
 }
 
 .right {
@@ -147,9 +163,17 @@ ul.nav-links li:hover {
 	margin: 0 10% 0 0; 
 }
 
+.right .vector-image {
+	margin: 10% 0 0 0;
+}
+
 .left {
 	float: left;
 	margin: 0 0 0 10%;
+}
+
+.left .vector-image {
+	margin: 10% 0 0 0;
 }
 
 .main-container .title {
@@ -170,14 +194,37 @@ ul.nav-links li:hover {
 }
 
 .round-button:hover {
-	transform: translateY(1.5vh);
+	transform: translateY(1vh);
 	box-shadow: rgba(200, 200, 200, 0.2) 1vh  1vh 3vh;
-	background-color: rgb(255, 255, 200);
+	background-color: rgb(255, 255, 255);
 	color: black;
 }
 
+.vector-cover {
+	
+}
 
+.vector-image {
+	width: 40%;
+}
 
+.footer-info {
+	margin: 1vh 10vw;
+	width: 100%;
+	padding: 5vh 5vw;
+	color: crimson;
+}
+
+.footer-contact {
+	float: left;
+	border-right: 2px solid white;
+	display: inline;
+}
+
+.footer-title {
+	font-size: 3vh;
+	font-weight: bold;
+}
 
 /*-----------Social media Icons----------*/
 

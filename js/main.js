@@ -1,3 +1,19 @@
+/* logo hide on scroll */
+
+var maxVisibleOffset = 105;
+var logo = document.getElementById("smalogo");
+logo.style.height = "4.5vh";
+window.onscroll = function() {
+	var currOffset = window.pageYOffset;
+	if(currOffset > maxVisibleOffset)
+		logo.style.height = "0";
+	else if(currOffset < maxVisibleOffset) {
+		if(logo.style.height !== "4.5vh")
+			logo.style.height = "4.5vh"
+	}
+	//  && logo.style.height === "0"
+}
+
 $(document).ready(function () {
   $(window).scroll(function () {
 
