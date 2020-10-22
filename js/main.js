@@ -1,5 +1,4 @@
 /* logo hide on scroll */
-
 var maxVisibleOffset = 105;
 var logo = document.getElementById("smalogo");
 window.onscroll = function() {
@@ -12,8 +11,25 @@ window.onscroll = function() {
 		if(logo.style.height !== "0")
 			logo.style.height = "0";
 	}
-	//  && logo.style.height === "0"
 }
+
+/* tabs */
+function showTab(tabNumId) {
+	var tabsList = [document.getElementById('web-window'), 
+		document.getElementById('mobile-window')];
+	tabsList.forEach(function(item, index) {
+		if(index === tabNumId) {
+			tabsList[index].className = tabsList[index].className.replace(" tab-hidden", " tab-show");
+			tabsList[index].style.display = 'block';
+		} else {
+			tabsList[index].class = tabsList[index].className.replace(" tab-show", " tab-hidden");
+			tabsList[index].style.display = 'none';
+		}
+	});
+}
+
+
+
 
 $(document).ready(function () {
   $(window).scroll(function () {
