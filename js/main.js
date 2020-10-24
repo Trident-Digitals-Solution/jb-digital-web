@@ -15,6 +15,7 @@ window.onscroll = function() {
 
 /* tabs */
 function showTab(tabNumId) {
+	/* needs update */
 	var tabsList = [document.getElementById('web-window'), 
 		document.getElementById('mobile-window')];
 	tabsList.forEach(function(item, index) {

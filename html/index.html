@@ -141,21 +141,51 @@
     </div>
     
     <div class="cover" id="div6">
-        <div class="tab-container">
-        	<div class="tab-titles">
-        		<button class="tab-button" onClick="showTab(0)">Web</button>
-        		<button class="tab-button" onClick="showTab(1)">Mobile</button>
-        		<button class="tab-button">SEO</button>
-        		<button class="tab-button">Marketing</button>
+        <div class="tab-card-container">
+        	<div id="web-card" class="tab-card" onClick="showTab(0)">
+        		<div class="transparent-cover">
+        			<p class="card-title title">Web Development</p>
+        			<i class="fa fa-code card-ico"></i>
+        			<p>Trident Digitals is a techno-geek team that is devoted and follows business ethics who work along to deliver agile 
+        				web based interactive and pragmatic solutions.</p>
+        			<button class="card-button">Show More</button>
+        		</div>
         	</div>
-        	<div id="web-window" class="tab-window tab-show">
+        	<div id="mobile-card" class="tab-card" onClick="showTab(1)">
+        		<div class="transparent-cover">
+    	    		<p class="card-title title">Mobile Development</p>
+	        		<i class="fa fa-mobile card-ico"></i>
+	        		<p>Our plan for mobile application development is to produce a dynamic and cross-platform mobile 
+	        			applications<br><br>iOS compatible, Android compatible robust mobile applications.</p>
+        			<button class="card-button">Show More</button>
+        		</div>
+        	</div>
+        	<div id="seo-card" class="tab-card" onClick="showTab(2)">
+        		<div class="transparent-cover">
+        			<p class="card-title title">SEO</p>
+	        		<i class="fa fa-market card-ico"></i>
+	        		<p>We're a centered SEO Services Company that gives you the best SEO strategy 
+	        			to assist you to be high in the competition.</p>
+        			<button class="card-button">Show More</button>
+        		</div>
+        	</div>
+        	<div id="seo-card" class="tab-card" onClick="showTab(3)">
+        		<div class="transparent-cover">
+        			<p class="card-title title">Digital Marketing</p>
+	        		<i class="fa fa-market card-ico"></i>
+	        		<p>Be detected be seen with Trident Digitals, the interactive user interface, and engagement
+	        			that we offer a lot of visibility to your business with complete presence across the digital world.</p>
+        			<button class="card-button">Show More</button>
+        		</div>
+        	</div>
+        	<div id="web-window" class="tab-window tab-hidden">
         		<p class="title">Web Development</p>
-        		<p class="contents">Hello! this tab is for web development content</p>
-        	</div>
-        	<div id="mobile-window" class="tab-window tab-hidden">
-        		<p class="title">Mobile Development</p>
-        		<p class="contents">Hello! this tab is for mobile development content</p>
-        	</div>
+       			<p class="contents">Hello! this tab is for web development content</p>
+       		</div>
+       		<div id="mobile-window" class="tab-window tab-hidden">
+	  			<p class="title">Mobile Development</p>
+    			<p class="contents">Hello! this tab is for mobile development content</p>
+    		</div>
         </div>
     </div>
 
