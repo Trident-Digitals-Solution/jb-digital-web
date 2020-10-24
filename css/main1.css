@@ -311,7 +311,6 @@ ul.nav-links li:hover {
 
 .tab-card-container {
 	display: flex;
-	/* TODO: flex-direction: column; for mobiles */
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -326,6 +325,13 @@ ul.nav-links li:hover {
     float: left;
 }
 
+/* TODO: merge both media queries */
+@media screen and(max-width: 767px) {
+	.tab-card-container{
+		flex-direction: column;
+	}
+}
+
 .tab-card-container::-webkit-scrollbar {
   display: none;
 }
@@ -334,7 +340,6 @@ ul.nav-links li:hover {
 .tab-card {
 	position: relative;
 	height: 100%;
-	/* TODO: min-width: 90vw; for mobiles */
 	min-width: 25vw;
 	background-color: rgb(250, 250, 250);
 	box-shadow: black 0 0.2vh 5px;
@@ -344,6 +349,12 @@ ul.nav-links li:hover {
 	overflow: hidden;
 	background-color: black;
 	background-position: center;
+}
+
+@media screen and(max-width: 767px) {
+	.tab-card {
+		min-width: 90vw;
+	}
 }
 
 .tab-card:hover {
