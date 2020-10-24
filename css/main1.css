@@ -114,22 +114,24 @@ ul.nav-links li:hover {
 
 #div2 {
   /* TODO: Implement background image */
-  /* background-image: url('../img/aboutus.jpg'); */
+  background-image: url('../img/background1_right.svg');
 }
 
 #div3 {
   /* TODO: Implement background image */
-  /* background-image: url('../img/market.jpg'); */
+  background-image: url('../img/background2_left.svg');
 }
 
 #div4 {
   /* TODO: Implement background image */
   /* background-image: url('../img/office.jpg'); */
+  background-image: url('../img/background1_right.svg');
 }
 
 #div5 {
   /* */
   /* TODO: Implement background image */
+  background-image: url('../img/background2_left.svg');
 }
 
 #div6 {
