@@ -1,3 +1,8 @@
+:root {
+	--grad1: #375BD4;
+	--grad2: #38DCB8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@
   outline: none;
   transition: all ease 0.5s;
   box-sizing: border-box;
+  color: white;
   /*font-family: 'Dosis', sans-serif;*/
 }
 
@@ -17,6 +23,7 @@ body {
   background-color: white;
   text-shadow: 1px 1px 5vh rgba(240, 240, 240, 0.8);
   width: 100%;
+  background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
 }
 
 a {
@@ -157,12 +164,14 @@ ul.nav-links li:hover {
   border-radius: 2vh;
   border: none;
   padding: 5vh 2vw;
+  font-weight: bold;
 }
 
 .dropped-card:hover {
-  background-image: linear-gradient(125deg, white, rgb(230, 230, 230));
+  background-image: linear-gradient(125deg, var(--grad2), var(--grad1));
   transform: translateY(1.5vh);
   box-shadow: rgba(0, 0, 0, 0.2) 1vh 1vh 3vh;
+  color: black;
 }
 
 .abs {
