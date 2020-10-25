@@ -325,13 +325,6 @@ ul.nav-links li:hover {
     float: left;
 }
 
-/* TODO: merge both media queries */
-@media screen and(max-width: 767px) {
-	.tab-card-container{
-		flex-direction: column;
-	}
-}
-
 .tab-card-container::-webkit-scrollbar {
   display: none;
 }
@@ -351,7 +344,7 @@ ul.nav-links li:hover {
 	background-position: center;
 }
 
-@media screen and(max-width: 767px) {
+@media only screen and (max-width: 360px) {
 	.tab-card {
 		min-width: 90vw;
 	}
