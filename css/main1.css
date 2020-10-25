@@ -344,7 +344,7 @@ ul.nav-links li:hover {
 	background-position: center;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
 	.tab-card {
 		min-width: 90vw;
 	}
