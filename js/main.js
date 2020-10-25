@@ -15,18 +15,29 @@ window.onscroll = function() {
 
 /* tabs */
 function showTab(tabNumId) {
-	/* needs update */
-	var tabsList = [document.getElementById('web-window'), 
-		document.getElementById('mobile-window')];
-	tabsList.forEach(function(item, index) {
-		if(index === tabNumId) {
-			tabsList[index].className = tabsList[index].className.replace(" tab-hidden", " tab-show");
-			tabsList[index].style.display = 'block';
-		} else {
-			tabsList[index].class = tabsList[index].className.replace(" tab-show", " tab-hidden");
-			tabsList[index].style.display = 'none';
-		}
-	});
+	var tab = document.getElementById('window-overlay');
+	tab.className = "window tab-show";
+	/* TODO: populate with content */
+	var content = document.getElementById('content');
+	var title = document.getElementById('tab-title');
+	if(tabNumId === 0) {
+		title.innerHTML = "Web Development";
+		content.innerHTML = content.innerHTML + "<br>You clicked Web Development";
+	}
+	else if(tabNumId === 1) {
+		title.innerHTML = "Web Development";
+		content.innerHTML = content.innerHTML + "<br>You clicked Mobile Development";
+	}
+}
+
+function hideTab() {
+	var tab = document.getElementById('window-overlay');
+	tab.className = "window tab-hidden";
+	/* TODO: delete content */
+	var content = document.getElementById('content');
+	content.innerHTML = "Whatever the content we want";
+	var title = document.getElementById('tab-title');
+	title.innerHTML = "#TITLE";
 }
 
 

@@ -108,25 +108,25 @@
   		
     <div class="cover" id="div6">
         <div class="tab-card-container">
-        	<div id="web-card" class="tab-card" onClick="showTab(0)">
+        	<div id="web-card" class="tab-card">
         		<div class="transparent-cover">
         			<p class="card-title title">Web Development</p>
         			<i class="fa fa-code card-ico"></i>
         			<p>Trident Digitals is a techno-geek team that is devoted and follows business ethics who work along to deliver agile 
         				web based interactive and pragmatic solutions.</p>
-        			<button class="card-button">Show More</button>
+        			<button class="card-button" onClick="showTab(0)">Show More</button>
         		</div>
         	</div>
-        	<div id="mobile-card" class="tab-card" onClick="showTab(1)">
+        	<div id="mobile-card" class="tab-card">
         		<div class="transparent-cover">
     	    		<p class="card-title title">Mobile Development</p>
 	        		<i class="fa fa-mobile card-ico"></i>
 	        		<p>Our plan for mobile application development is to produce a dynamic and cross-platform mobile 
 	        			applications<br><br>iOS compatible, Android compatible robust mobile applications.</p>
-        			<button class="card-button">Show More</button>
+        			<button class="card-button" onClick="showTab(1)">Show More</button>
         		</div>
         	</div>
-        	<div id="seo-card" class="tab-card" onClick="showTab(2)">
+        	<div id="seo-card" class="tab-card">
         		<div class="transparent-cover">
         			<p class="card-title title">SEO</p>
 	        		<i class="fa fa-market card-ico"></i>
@@ -135,7 +135,7 @@
         			<button class="card-button">Show More</button>
         		</div>
         	</div>
-        	<div id="seo-card" class="tab-card" onClick="showTab(3)">
+        	<div id="seo-card" class="tab-card">
         		<div class="transparent-cover">
         			<p class="card-title title">Digital Marketing</p>
 	        		<i class="fa fa-market card-ico"></i>
@@ -144,14 +144,6 @@
         			<button class="card-button">Show More</button>
         		</div>
         	</div>
-        	<div id="web-window" class="tab-window tab-hidden">
-        		<p class="title">Web Development</p>
-       			<p class="contents">Hello! this tab is for web development content</p>
-       		</div>
-       		<div id="mobile-window" class="tab-window tab-hidden">
-	  			<p class="title">Mobile Development</p>
-    			<p class="contents">Hello! this tab is for mobile development content</p>
-    		</div>
         </div>
     </div>
     
@@ -241,5 +233,17 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  
+  <!-- Window -->
+  <div class="window tab-hidden" id="window-overlay">
+  	<div class="tab-window">
+  		<div class="window-head">
+  			<span class="tittle" id="tab-title">#TITLE</span>
+  			<span class="close" onclick="hideTab()"><i class="fa fa-times-circle"></i></span>
+  		</div>
+  		<br><br>
+  		<div id="content">Whatever the content we want</p>
+  	</div>
+  </div>
 </body>
 </html>
