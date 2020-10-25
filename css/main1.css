@@ -119,7 +119,8 @@ ul.nav-links li:hover {
 
 #div1 {
   margin: 7vh 0 0 0;
-  background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg');
+  background-image: url('../img/MainBackground.jpg');
+  /* background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg'); */
 }
 
 .intro-content {
@@ -313,6 +314,7 @@ ul.nav-links li:hover {
 
 #user-info {
   padding: 0px;
+  z-index: 100;
 }
 
 .social-icons {
@@ -531,7 +533,7 @@ ul.nav-links li:hover {
 }
 
 /* optimizing a bit for mobile devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   .cover {
     margin: 0 1vh;
     height: 80vh;
