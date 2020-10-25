@@ -1,14 +1,14 @@
 :root {
-	--grad1: #375BD4;
-	--grad2: #38DCB8;
-	--grad3: #001E3F;
-	--grad4: #3A6367;
-	--grad5: white;
-	--grad6: #005F6E;
-	--grad7: #001184;
-	--grad8: #00024A;
-	--grad9: #4E1506;
-	--text-gray: #ddd;
+  --grad1: #375BD4;
+  --grad2: #38DCB8;
+  --grad3: #001E3F;
+  --grad4: #3A6367;
+  --grad5: white;
+  --grad6: #005F6E;
+  --grad7: #001184;
+  --grad8: #00024A;
+  --grad9: #4E1506;
+  --text-gray: #ddd;
 }
 
 * {
@@ -129,6 +129,42 @@ ul.nav-links li:hover {
   font-weight: bold;
 }
 
+.ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 {
+  top: 0;
+}
+
+.ml1 .line2 {
+  bottom: 0;
+}
+
 #div2 {
   /* TODO: Implement background image */
   /* background-image: url('../img/background1_right.svg'); */
@@ -142,14 +178,14 @@ ul.nav-links li:hover {
 }
 
 #div3 .round-button {
-	color: black;
-	border-color: black;
+  color: black;
+  border-color: black;
 }
 
 #div3 .round-button:hover {
-	color: white;
-	border-color: black;
-	background-color: black;
+  color: white;
+  border-color: black;
+  background-color: black;
 }
 
 #div4 {
@@ -167,35 +203,35 @@ ul.nav-links li:hover {
 }
 
 #div6 {
-	background-image: linear-gradient(125deg, var(--grad8), var(--grad9));
+  background-image: linear-gradient(125deg, var(--grad8), var(--grad9));
 }
 
 .main-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    font-size: 2.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vh;
 }
 
 .main-flex:nth-child(even) .title {
-	/* border-bottom: 3px solid black; */
-	color: black;
+  /* border-bottom: 3px solid black; */
+  color: black;
 }
 
 .main-flex:nth-child(even) .text {
-	color: grey;
+  color: grey;
 }
 
 .main-flex:nth-child(odd) .text {
-	color: var(--text-gray);
+  color: var(--text-gray);
 }
 
 .main-container {
-	padding: 5% 5% 10% 5%;
-	width: 100%;
-	color: white;
-	position: relative;
+  padding: 5% 5% 10% 5%;
+  width: 100%;
+  color: white;
+  position: relative;
 }
 
 .main-container .title {
@@ -213,16 +249,16 @@ ul.nav-links li:hover {
 }
 
 .main-container-logo {
-	width: 30%;
-	float: right;
-	position: absolute;
-	top: 10%;
-	left: 55%;
+  width: 30%;
+  float: right;
+  position: absolute;
+  top: 10%;
+  left: 55%;
 }
 
 .show-case {
-	width: 100%;
-	background-color: red;
+  width: 100%;
+  background-color: red;
 }
 
 /* hide card scroll bar Webkit*/
@@ -338,19 +374,19 @@ ul.nav-links li:hover {
 }
 
 .tab-card-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	height: 80%;
-	background-color: inherit;
-	overflow-x: scroll;
-	padding: 5vh 4vw;
-	-ms-overflow-style: none;
-    scrollbar-width: none;
-    text-align: center;
-    font-size: 2.5vh;
-    float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  background-color: inherit;
+  overflow-x: scroll;
+  padding: 5vh 4vw;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  text-align: center;
+  font-size: 2.5vh;
+  float: left;
 }
 
 .tab-card-container::-webkit-scrollbar {
@@ -359,182 +395,195 @@ ul.nav-links li:hover {
 
 
 .tab-card {
-	position: relative;
-	height: 100%;
-	min-width: 25vw;
-	background-color: rgb(250, 250, 250);
-	box-shadow: black 0 0.2vh 5px;
-	border-radius: 20px;
-	margin: 0 4vw;
-	color: white;
-	overflow: hidden;
-	background-color: black;
-	background-position: center;
+  position: relative;
+  height: 100%;
+  min-width: 25vw;
+  background-color: rgb(250, 250, 250);
+  box-shadow: black 0 0.2vh 5px;
+  border-radius: 20px;
+  margin: 0 4vw;
+  color: white;
+  overflow: hidden;
+  background-color: black;
+  background-position: center;
 }
 
 .tab-card:hover {
-	transform: translateY(10px);
-	box-shadow: black 0 1vh 20px;
+  transform: translateY(10px);
+  box-shadow: black 0 1vh 20px;
 }
 
 .card-title {
-	font-size: 3.5vh !important;
-	margin-bottom: 1vh !important;
+  font-size: 3.5vh !important;
+  margin-bottom: 1vh !important;
 }
 
 .card-title:before {
-	color: white !important;
-	background: white !important;
+  color: white !important;
+  background: white !important;
 }
 
 .card-ico {
-	font-size: 5vh !important;
+  font-size: 5vh !important;
 }
 
 .card-description {
-	font-size: 1.8vh;
+  font-size: 1.8vh;
 }
 
 .card-button {
-	padding: 1vh 2vw;
-	background-color: crimson;
-	border-radius: 500px;
-	color: white;
-	font-weight: bold;
-	position: absolute;
-	width: 50%;
-	max-height: 10%;
-	top: 85%;
-	left: 25%;
-	box-shadow: black 0 2px 10px;
+  padding: 1vh 2vw;
+  background-color: crimson;
+  border-radius: 500px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  width: 50%;
+  max-height: 10%;
+  top: 85%;
+  left: 25%;
+  box-shadow: black 0 2px 10px;
 }
 
 .card-button:hover {
-	box-shadow: black 0 5px 10px;
-	transform: translateY(5px);
+  box-shadow: black 0 5px 10px;
+  transform: translateY(5px);
 }
 
 #web-card {
-	background-image: url('https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg');
 }
 
 #mobile-card {
-	background-image: url('https://cdn.pixabay.com/photo/2015/05/29/10/32/ux-789160_960_720.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/29/10/32/ux-789160_960_720.jpg');
 }
 
 #seo-card {
-	background-image: url('https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_960_720.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_960_720.jpg');
 }
 
 .window {
-	z-index: 200;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.3);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-window {
-	border-radius: 15px;
-	background-color: white;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	text-align: center;
+  border-radius: 15px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .window-head {
-	font-size: 3vh;
-	padding: 1vh 0;
-	background-color: black;
-	color: white;
-	font-weight: bold;
+  font-size: 3vh;
+  padding: 1vh 0;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .close {
-	font-size: 2.7vh;
-	color: red;
-	float: right;
-	margin-right: 2vw;
-	border-radius: 500px;
+  font-size: 2.7vh;
+  color: red;
+  float: right;
+  margin-right: 2vw;
+  border-radius: 500px;
 }
 
 .tab-show {
-	animation: show-tab 1s;
-	display: block;
+  animation: show-tab 1s;
+  display: block;
 }
 
 .tab-hidden {
-	animation: hide-tab 1s;
-	display: none;
+  animation: hide-tab 1s;
+  display: none;
 }
 
 @keyframes show-tab {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes hide-tab {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 /* optimizing a bit for mobile devices */
 @media only screen and (max-width: 600px) {
-	.cover {
-		margin: 0 1vh;
-		height: 80vh;
-	}
-	#div1 {
-		height: 100vh;
-	}
-	.tab-card {
-		min-width: 90vw;
-	}
-	.tab-card-container {
-		padding: 5vh 1vw;
-	}
-	.nav-links {
-		display: none;
-	}
-	.logo {
-		width: 30%;
-	}
-	.vector-image {
-		display: none;
-	}
-	.main-container {
-		width: 95%;
-		padding: 0 3vw;
-	}
-	.right {
-		float: none;
-		margin: 0;
-	}
-	.left {
-		float: none;
-		margin: 0;
-	}
-	.dropped-card {
-		background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
-		transform: translateY(1.5vh);
-		box-shadow: rgba(0, 0, 0, 0.2) 1vh 1vh 3vh;
-		color: white;
-	}
-	.dropped-card:hover {
-		background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
-	}
+  .cover {
+    margin: 0 1vh;
+    height: 80vh;
+  }
+
+  #div1 {
+    height: 100vh;
+  }
+
+  .tab-card {
+    min-width: 90vw;
+  }
+
+  .tab-card-container {
+    padding: 5vh 1vw;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .vector-image {
+    display: none;
+  }
+
+  .main-container {
+    width: 95%;
+    padding: 0 3vw;
+  }
+
+  .right {
+    float: none;
+    margin: 0;
+  }
+
+  .left {
+    float: none;
+    margin: 0;
+  }
+
+  .dropped-card {
+    background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
+    transform: translateY(1.5vh);
+    box-shadow: rgba(0, 0, 0, 0.2) 1vh 1vh 3vh;
+    color: white;
+  }
+
+  .dropped-card:hover {
+    background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
+  }
 }
