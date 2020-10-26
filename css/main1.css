@@ -144,6 +144,10 @@ ul.nav-links li:hover {
   font-weight: bold;
 }
 
+.intro-content button .round-button {
+  z-index: 100;
+}
+
 
 #div2 {
   /* TODO: Implement background image */
