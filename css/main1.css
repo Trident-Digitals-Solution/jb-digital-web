@@ -8,7 +8,7 @@
   --grad7: #001184;
   --grad8: #00024A;
   --grad9: #4E1506;
-  --text-gray: #ddd;
+  --text-gray: #444;
 }
 
 * {
@@ -35,6 +35,22 @@ body {
   background-size: contain;
   background-repeat: repeat-y;
 }
+
+/* ------Canvas------ */
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 2px solid white;
+  z-index: 50;
+  border: none;
+}
+
+/* End of Canvas */
 
 a {
   text-decoration: none;
@@ -130,7 +146,6 @@ ul.nav-links li:hover {
   font-weight: bold;
 }
 
-
 #div2 {
   /* TODO: Implement background image */
   /* background-image: url('../img/background1_right.svg'); */
@@ -182,15 +197,19 @@ ul.nav-links li:hover {
 
 .main-flex:nth-child(even) .title {
   /* border-bottom: 3px solid black; */
-  color: black;
+  color: white !important;
 }
 
 .main-flex:nth-child(even) .text {
-  color: grey;
+  color: #ddd !important;
 }
 
 .main-flex:nth-child(odd) .text {
-  color: var(--text-gray);
+  color: var(--text-gray) !important;
+}
+
+.main-flex:nth-child(odd) .title {
+  color: black !important;
 }
 
 .main-container {
