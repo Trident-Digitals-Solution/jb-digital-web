@@ -414,6 +414,10 @@ ul.nav-links li:hover {
 	transform: translateY(5px);
 }
 
+.card-button:active {
+	transform: translateY(-5px);
+}
+
 #web-card {
 	background-image: url('https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg');
 }
