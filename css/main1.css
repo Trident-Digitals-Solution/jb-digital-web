@@ -8,6 +8,8 @@
   --grad7: #001184;
   --grad8: #00024A;
   --grad9: #4E1506;
+  --grad10: #ED00A5;
+  --grad11: #58004C;
   --text-gray: #444;
 }
 
@@ -31,9 +33,6 @@ body {
   text-shadow: 1px 1px 5vh rgba(240, 240, 240, 0.8);
   width: 100%;
   background-image: linear-gradient(125deg, var(--grad1), var(--grad2));
-  background-image: url('../img/17545.jpg');
-  background-size: contain;
-  background-repeat: repeat-y;
 }
 
 /* ------Canvas------ */
