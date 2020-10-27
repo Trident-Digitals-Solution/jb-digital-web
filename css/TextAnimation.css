@@ -31,18 +31,15 @@
 .ml14 .text-wrapper {
   position: relative;
   display: inline-block;
-  
+
 }
 
-.ml14 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #fff;
-  transform-origin: 100% 100%;
-  bottom: 0;
+.ml14 .text-wrapper span {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .ml14 .letter {
@@ -53,9 +50,7 @@
 .ml1 .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+
 }
 
 .ml1 .line {
