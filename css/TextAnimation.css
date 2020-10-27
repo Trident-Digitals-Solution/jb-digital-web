@@ -23,6 +23,11 @@
   line-height: 0.8em;
 }
 
+.ml12c .letter {
+  display: inline-block;
+  line-height: 0.8em;
+}
+
 .ml1 .text-wrapper {
   position: relative;
   display: inline-block;

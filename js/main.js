@@ -160,12 +160,12 @@ anime.timeline({ loop: true })
     delay: (el, i) => 100 + 30 * i
   });
 
-var textWrapper12 = document.querySelector('.ml12b');
-textWrapper12.innerHTML = textWrapper12.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper12b = document.querySelector('.ml12b');
+textWrapper12b.innerHTML = textWrapper12b.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({ loop: true })
   .add({
-    targets: '.ml12 .letter',
+    targets: '.ml12b .letter',
     translateX: [40, 0],
     translateZ: 0,
     opacity: [0, 1],
@@ -173,7 +173,30 @@ anime.timeline({ loop: true })
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
   }).add({
-    targets: '.ml12 .letter',
+    targets: '.ml12b .letter',
+    translateX: [0, -30],
+    opacity: [1, 0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+
+
+
+var textWrapper12c = document.querySelector('.ml12c');
+textWrapper12c.innerHTML = textWrapper12c.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: true })
+  .add({
+    targets: '.ml12c .letter',
+    translateX: [40, 0],
+    translateZ: 0,
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12c .letter',
     translateX: [0, -30],
     opacity: [1, 0],
     easing: "easeInExpo",
