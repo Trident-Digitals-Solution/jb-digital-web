@@ -39,7 +39,6 @@ body {
 /* ------Canvas------ */
 
 canvas {
-	display:none;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,23 +60,23 @@ a {
 }
 
 .navbar {
-  padding: 2vh 5vh;
+  padding: 2vh 2vw;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 55;
   background-color: rgb(10, 10, 10);
   color: white;
   box-shadow: black 1vh 1vh 1vh;
 }
 
 .big-text {
-  font-size: 4.5vh;
+  font-size: 4vh;
 }
 
 .logo-small {
-  height: 0;
+  height: 4vh;
   vertical-align: middle;
 }
 
@@ -525,6 +524,29 @@ ul.nav-links li:hover {
 
 /* optimizing a bit for mobile devices */
 @media only screen and (max-width: 670px) {
+  * {
+  	/* add explict rules for transition for elements 
+  	 * otherwise mobile devices will be laggy */
+  	transition: none;
+  }
+  
+  /* adding explict rules */
+  .logo-small, button, .tab-card-container * {
+  	transition: all ease 0.5s;
+  }
+  
+  canvas {
+  	display: none;
+  }
+  
+  .navbar {
+  	padding: 2vh 2vw;
+  }
+  
+  .logo-small {
+  	
+  }
+  
   .cover {
     margin: 0 0;
     height: 80vh;
