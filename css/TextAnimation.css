@@ -1,11 +1,12 @@
 .ml1 {
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 3.0em;
 }
 
 .ml1 .letter {
   display: inline-block;
   line-height: 1em;
+  margin: 10px 3px;
 }
 
 .ml12 .letter {
@@ -50,7 +51,6 @@
 .ml1 .text-wrapper {
   position: relative;
   display: inline-block;
-
 }
 
 .ml1 .line {
