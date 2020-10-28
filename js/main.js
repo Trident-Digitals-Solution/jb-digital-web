@@ -92,7 +92,7 @@ anime.timeline({ loop: true })
 var textWrapper12 = document.querySelector('.ml12');
 textWrapper12.innerHTML = textWrapper12.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
   .add({
     targets: '.ml12 .letter',
     translateX: [40, 0],
@@ -101,19 +101,21 @@ anime.timeline({ loop: true })
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0, -30],
-    opacity: [1, 0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+
+    /**These Codes are responsible for completing loop animation. if loop is false then no need to uncomment these code */
+    // }).add({
+    //   targets: '.ml12 .letter',
+    //   translateX: [0, -30],
+    //   opacity: [1, 0],
+    //   easing: "easeInExpo",
+    //   duration: 1100,
+    //   delay: (el, i) => 100 + 30 * i
   });
 
 var textWrapper12a = document.querySelector('.ml12a');
 textWrapper12a.innerHTML = textWrapper12a.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
   .add({
     targets: '.ml12a .letter',
     translateX: [40, 0],
@@ -122,19 +124,21 @@ anime.timeline({ loop: true })
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12a .letter',
-    translateX: [0, -30],
-    opacity: [1, 0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+
+    /**These Codes are responsible for completing loop animation. if loop is false then no need to uncomment these code */
+    // }).add({
+    //   targets: '.ml12a .letter',
+    //   translateX: [0, -30],
+    //   opacity: [1, 0],
+    //   easing: "easeInExpo",
+    //   duration: 1100,
+    //   delay: (el, i) => 100 + 30 * i
   });
 
 var textWrapper12b = document.querySelector('.ml12b');
 textWrapper12b.innerHTML = textWrapper12b.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
   .add({
     targets: '.ml12b .letter',
     translateX: [40, 0],
@@ -143,13 +147,15 @@ anime.timeline({ loop: true })
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12b .letter',
-    translateX: [0, -30],
-    opacity: [1, 0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+
+    /**These Codes are responsible for completing loop animation. if loop is false then no need to uncomment these code */
+    // }).add({
+    //   targets: '.ml12b .letter',
+    //   translateX: [0, -30],
+    //   opacity: [1, 0],
+    //   easing: "easeInExpo",
+    //   duration: 1100,
+    //   delay: (el, i) => 100 + 30 * i
   });
 
 
@@ -157,7 +163,7 @@ anime.timeline({ loop: true })
 var textWrapper12c = document.querySelector('.ml12c');
 textWrapper12c.innerHTML = textWrapper12c.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
   .add({
     targets: '.ml12c .letter',
     translateX: [40, 0],
@@ -166,19 +172,21 @@ anime.timeline({ loop: true })
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12c .letter',
-    translateX: [0, -30],
-    opacity: [1, 0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+
+    /**These Codes are responsible for completing loop animation. if loop is false then no need to uncomment these code */
+    // }).add({
+    //   targets: '.ml12c .letter',
+    //   translateX: [0, -30],
+    //   opacity: [1, 0],
+    //   easing: "easeInExpo",
+    //   duration: 1100,
+    //   delay: (el, i) => 100 + 30 * i
   });
 
 var textWrapper = document.querySelector('.ml14 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: true })
+anime.timeline({ loop: false })
   .add({
     targets: '.ml14 .line',
     scaleX: [0, 1],
@@ -195,10 +203,12 @@ anime.timeline({ loop: true })
     duration: 800,
     offset: '-=600',
     delay: (el, i) => 150 + 25 * i
-  }).add({
-    targets: '.ml14',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+
+    /**These Codes are responsible for completing loop animation. if loop is false then no need to uncomment these code */
+    // }).add({
+    //   targets: '.ml14',
+    //   opacity: 0,
+    //   duration: 1000,
+    //   easing: "easeOutExpo",
+    //   delay: 1000
   });
