@@ -43,6 +43,10 @@ a {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
   padding: 2vh 5vh;
   width: 100%;
   position: fixed;
@@ -60,7 +64,7 @@ a {
 
 .logo-small {
   height: 0;
-  vertical-align: middle;
+  margin: 5px;
 }
 
 .logo {
@@ -77,15 +81,21 @@ a {
 }
 
 ul.nav-links {
-  float: right;
   margin: 0 5vh;
 }
 
 ul.nav-links li {
   display: inline;
-  margin: 0 2vh 0 0;
-  border-radius: 0 0 2vh 0;
+  border-radius: 2px;
   padding: 1.5vh;
+}
+
+ul.nav-links li:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+ul.nav-links li:last-child {
+  border-radius: 0 0 10px 0;
 }
 
 ul.nav-links li.selected {
@@ -430,6 +440,10 @@ ul.nav-links li:hover {
 @media only screen and (max-width: 670px) {
   .navbar {
     padding: 2vh 2vw;
+  }
+  
+  .menu-button {
+    display: inline;
   }
   
   .intro-content .main-heading {
