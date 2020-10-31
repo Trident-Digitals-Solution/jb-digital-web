@@ -115,7 +115,7 @@ ul.nav-links li:hover {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.3);
   padding: 2vh 0.5vw;
 }
 
@@ -395,6 +395,7 @@ ul.nav-links li:hover {
   position: relative;
   height: 100%;
   min-width: 25vw;
+  max-width: 20vw;
   background-color: rgb(250, 250, 250);
   box-shadow: black 0 0.2vh 5px;
   border-radius: 20px;
@@ -406,13 +407,17 @@ ul.nav-links li:hover {
 }
 
 .tab-card:hover {
-  transform: translateY(10px);
-  box-shadow: black 0 1vh 20px;
+  transform: scale(1.01);
+  box-shadow: crimson 0 1vh 20px;
 }
 
 .card-title {
   font-size: 3.5vh !important;
   margin-bottom: 1vh !important;
+}
+
+.transparent-cover-tab p {
+	font-size: 2vh;
 }
 
 .card-title:before {
@@ -428,18 +433,37 @@ ul.nav-links li:hover {
   font-size: 1.8vh;
 }
 
+.transparent-cover-tab {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 2vh 0.5vw;
+}
+
 #web-card {
-  background-image: url('https://cdn.pixabay.com/photo/2019/01/30/07/45/web-3963945_960_720.jpg');
+  background-image: url('../img/web.jpg');
 }
 
 #mobile-card {
-  background-image: url('https://cdn.pixabay.com/photo/2015/05/29/10/32/ux-789160_960_720.jpg');
+  background-image: url('../img/mobile.jpg');
 }
 
 #seo-card {
-  background-image: url('https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_960_720.jpg');
+  background-image: url('../img/seo.png');
 }
 
+#digm-card {
+  background-image: url('../img/digitalm.jpg');
+}
+
+#socm-card {
+  background-image: url('../img/socialm.jpg');
+}
+
+#vidm-card {
+  background-image: url('../img/videom.jpg');
+}
 /* optimizing a bit for mobile devices */
 @media only screen and (max-width: 670px) {
   .navbar {

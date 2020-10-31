@@ -1,10 +1,23 @@
 .shadow-effect {
 	background: #fff;
 	padding: 20px;
-	border-radius: 4px;
+	border-radius: 10px;
 	text-align: center;
 	border: 1px solid #ececec;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+	transition: all ease 1s;
+}
+.shadow-effect:hover {
+	--card-crimson: #FF004F;
+	background: var(--card-crimson);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+	border: 2px solid crimson;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+	transform: scale(1.02);
+	color: white;
+	margin-bottom: 6vh;
 }
 #customers-testimonials .shadow-effect p {
 	font-family: inherit;
@@ -12,6 +25,9 @@
 	line-height: 1.5;
 	margin: 0 0 17px 0;
 	font-weight: 300;
+}
+.testimonials {
+	background-color: #222;
 }
 .testimonial-name {
 	margin: -17px auto 0;
